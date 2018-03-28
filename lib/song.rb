@@ -51,8 +51,8 @@ class Song
     # return new Song instance with name and artist_name
 
 #    altered_filename = []
-    altered_filename = filename.slice(0..-5)
-    altered_filename = filename.split(" - ")
+    altered_filename = filename.slice(0..-5).split(" - ")
+#    altered_filename = filename.split(" - ")
     song = self.new
     song.artist_name = altered_filename[0]
     song.name = altered_filename[1]
