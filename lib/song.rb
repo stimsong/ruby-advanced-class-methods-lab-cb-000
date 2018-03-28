@@ -51,7 +51,7 @@ class Song
     # return new Song instance with name and artist_name
 
      altered_filename = filename.delete_suffix(".mp3").split(" - ")
-    
+
   end
 
 end
