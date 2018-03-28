@@ -52,7 +52,7 @@ class Song
 
     song = self.new
     altered_filename = filename.delete_suffix(".mp3").split(" - ")
-     
+
 
   end
 
