@@ -50,7 +50,9 @@ class Song
     # store second part of split to song.name
     # return new Song instance with name and artist_name
 
-     altered_filename = filename.delete_suffix(".mp3").split(" - ")
+    song = self.new
+    altered_filename = filename.delete_suffix(".mp3").split(" - ")
+     
 
   end
 
