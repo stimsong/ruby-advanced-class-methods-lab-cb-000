@@ -55,7 +55,6 @@ class Song
     song.artist_name = altered_filename[0]
     song.name = altered_filename[1]
     song
-
   end
 
   def self.create_from_filename(filename)
@@ -64,6 +63,5 @@ class Song
     song.artist_name = altered_filename[0]
     song.name = altered_filename[1]
     song
-
   end
 end
