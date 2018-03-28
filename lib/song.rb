@@ -56,7 +56,7 @@ class Song
     song = self.new
     song.artist_name = altered_filename[0]
     song.name = altered_filename[1]
-
+    song
 
   end
 
