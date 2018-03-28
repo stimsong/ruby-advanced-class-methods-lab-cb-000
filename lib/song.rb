@@ -52,6 +52,8 @@ class Song
 
     song = self.new
     altered_filename = filename.delete_suffix(".mp3").split(" - ")
+    song.artist_name = altered_filename[0].to_s
+    song.name = altered_filename[1].to_s
 
 
   end
