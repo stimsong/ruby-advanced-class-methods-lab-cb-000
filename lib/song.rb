@@ -43,4 +43,30 @@ class Song
 
   end
 
+  def self.new_from_filename(filename)
+    # remove .mp3  =>  filename.slice
+    # split at "-"  =>  " now's  the time".split(' ')   #=> ["now's", "the", "time"]
+    # store first part of split to song.artist_name
+    # store second part of split to song.name
+    # return new Song instance with name and artist_name
+
+    altered_filename = filename.slice(0..-5).split(" - ")
+    song = self.new
+    song.artist_name = altered_filename[0]
+    song.name = altered_filename[1]
+    song
+  end
+
+  def self.create_from_filename(filename)
+    altered_filename = filename.slice(0..-5).split(" - ")
+    song = self.create
+    song.artist_name = altered_filename[0]
+    song.name = altered_filename[1]
+    song
+  end
+
+  def self.destroy_all
+    self.all.clear
+  end
+
 end
