@@ -43,4 +43,15 @@ class Song
 
   end
 
+  def self.new_from_filename(filename)
+    # remove .mp3  =>  hello".delete_suffix("llo") #=> "he"
+    # split at "-"  =>  " now's  the time".split(' ')   #=> ["now's", "the", "time"]
+    # store first part of split to song.artist_name
+    # store second part of split to song.name
+    # return new Song instance with name and artist_name
+
+     altered_filename = filename.delete_suffix(".mp3")
+    
+  end
+
 end
